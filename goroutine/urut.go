@@ -31,6 +31,7 @@ func GoroutineUrut() {
 
 func bisaProcessUrut(index int, wg *sync.WaitGroup, locker *sync.Mutex) {
 	data := []interface{}{"bisa1", "bisa2", "bisa3"}
+	// ini result return langsung on function
 	fmt.Println(data, index)
 	locker.Unlock()
 	wg.Done()
